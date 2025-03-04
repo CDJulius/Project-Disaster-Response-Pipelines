@@ -14,7 +14,7 @@ The project has three main parts:
 1. [Getting Started](#getting-started)
 2. [How the Project is Organized](#how-the-project-is-organized)
 3. [How to Run the Project](#how-to-run-the-project)
-4. [Example Usage)
+4. [Example Usage])
 5. [Try It Out!](#try-it-out)
 6. [License](#license)
 
