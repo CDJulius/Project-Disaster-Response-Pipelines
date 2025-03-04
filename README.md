@@ -33,17 +33,31 @@ The project has three main parts:
    - **Joblib**: For saving and loading the machine learning model.
   
 
-disaster-response-pipeline/
-├── app/
-│   ├── templates/          # HTML files for the web app
-│   │   ├── go.html         # Page that shows classification results
-│   │   └── master.html     # Main page of the app
-│   └── run.py              # Script to start the web app
-├── data/
-│   ├── disaster_categories.csv  # Dataset with message categories
-│   ├── disaster_messages.csv    # Dataset with disaster messages
-│   └── process_data.py          # Script to clean and save data
-├── models/
-│   └── train_classifier.py      # Script to train the ML model
-├── README.md                    # This file!
-└── requirements.txt             # List of Python libraries needed
+## Project Structure
+
+Here’s how the project is organized:
+
+### What’s in Each Folder?
+- **`app/`**: Contains everything needed to run the web app.
+  - **`templates/`**: HTML files for the app’s interface.
+    - `go.html`: Shows the classification results.
+    - `master.html`: The main page of the app.
+  - **`run.py`**: Starts the Flask web app.
+
+- **`data/`**: Contains the datasets and the script to clean and organize the data.
+  - **`disaster_categories.csv`**: A dataset with categories for each message.
+  - **`disaster_messages.csv`**: A dataset with disaster-related messages.
+  - **`process_data.py`**: Cleans the data and saves it to a SQLite database.
+
+- **`models/`**: Contains the script to train the machine learning model.
+  - **`train_classifier.py`**: Trains the model and saves it as a `.pkl` file.
+
+- **`README.md`**: This file! It explains everything about the project.
+
+- **`requirements.txt`**: Lists all the Python libraries you need to install to run the project.
+
+---
+
+This structure keeps everything organized and makes it easy to find what you’re looking for. If you have any questions, feel free to ask!
+
+
