@@ -28,46 +28,46 @@ disaster-response-pipeline/
 └── requirements.txt # List of dependencies
 
 
-## How to Run the Project
+# How to Run the Project
 
-### 1. Set Up the Environment
+## 1. Set Up the Environment
 First, make sure you have Python 3 installed. Then, install the required dependencies
 
-### Explanation of Dependencies
-# pandas:
+## Explanation of Dependencies
+#### pandas:
 
 Used for data manipulation and loading the dataset from the SQLite database.
 
 Version >=1.0.0 ensures compatibility with modern features.
 
-# nltk:
+##### nltk:
 
 Used for natural language processing tasks like tokenization, stopword removal, and lemmatization.
 
 Version >=3.5 ensures access to the latest NLTK features and corpora.
 
-# scikit-learn:
+##### scikit-learn:
 
 Used for machine learning tasks, including building the pipeline, training the model, and evaluating performance.
 
 Version >=0.24.0 ensures compatibility with the latest scikit-learn features.
 
-# sqlalchemy:
+##### sqlalchemy:
 
 Used to connect to and query the SQLite database.
 
 Version >=1.4.0 ensures compatibility with modern database features.
 
-# joblib:
+##### joblib:
 
 Used to save and load the trained model.
 
 Version >=1.0.0 ensures compatibility with the latest joblib features.
 
-### 2. Run the ETL Pipeline
+## 2. Run the ETL Pipeline
 To clean the data and save it to a SQLite database, run the following command:
 
-# python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
+##### python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
 
 This script will:
 
@@ -77,10 +77,10 @@ Clean and merge the datasets.
 
 Save the cleaned data to DisasterResponse.db.
 
-### 3. Train the Machine Learning Model
+## 3. Train the Machine Learning Model
 Next, train the machine learning model by running:
 
-# python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
+##### python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
 
 This script will:
 
@@ -90,7 +90,7 @@ Train a machine learning model to classify messages into categories.
 
 Save the trained model as classifier.pkl.
 
-### 4. Run the Web App
+## 4. Run the Web App
 Finally, to launch the web app, run:
 
 
@@ -132,29 +132,8 @@ master.html: The main page where users can input messages.
 
 go.html: The result page that displays the classification results.
 
-Dependencies
-The project requires the following Python libraries:
+#Summary
 
-pandas
-
-numpy
-
-scikit-learn
-
-nltk
-
-sqlalchemy
-
-flask
-
-plotly
-
-You can install all dependencies by running:
-
-bash
-Copy
-pip install -r requirements.txt
-Summary
 This project provides a pipeline for processing disaster-related messages and classifying them into categories. The ETL pipeline cleans and stores the data, while the machine learning model classifies the messages. The web app allows users to interact with the model and see classification results in real-time.
 
 Feel free to explore the code, run the scripts, and play around with the web app!
