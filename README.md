@@ -13,19 +13,31 @@ The project has three main parts:
 The repository is organized as follows:
 
 disaster-response-pipeline/
+
 ├── app/
+
 │ ├── run.py # Flask app to run the web application
+
 │ └── templates/ # HTML templates for the web app
+
 │ ├── go.html # Result page
+
 │ └── master.html # Main page
+
 ├── data/
+
 │ ├── disaster_categories.csv # Dataset containing message categories
+
 │ ├── disaster_messages.csv # Dataset containing disaster messages
+
 │ └── process_data.py # Script to clean and save data to a database
+
 ├── models/
+
 │ └── train_classifier.py # Script to train the ML model
+
 ├── README.md # This file
-└── requirements.txt # List of dependencies
+
 
 
 # How to Run the Project
