@@ -132,7 +132,7 @@ master.html: The main page where users can input messages.
 
 go.html: The result page that displays the classification results.
 
-#Summary
+# Summary
 
 This project provides a pipeline for processing disaster-related messages and classifying them into categories. The ETL pipeline cleans and stores the data, while the machine learning model classifies the messages. The web app allows users to interact with the model and see classification results in real-time.
 
